@@ -1,15 +1,13 @@
 
 body {
-    margin: 0;
     font-family: "Inter", serif;
     font-optical-sizing: auto;
     color: #000;
-}
-
-.page-wrap {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     margin: 0;
+    height: 100vh;
 }
 
 .logo {
@@ -43,9 +41,10 @@ body {
     text-decoration: none;
 }
 
-.body {
+.main-content {
     display: flex;
-    padding: 5vw;
+    flex-direction: column;
+    justify-content: baseline;
 }
 
 .footer {
@@ -56,4 +55,43 @@ body {
     justify-content: center;
     background-color: #000;
     color: #fff;
+}
+
+.recipe-hero {
+    display: flex;
+    justify-content: center;
+    gap: 5vw;
+}
+
+.recipe-hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.recipe-hero-text > ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.recipe-hero-text > h1 {
+    text-decoration: underline #000;
+    text-underline-offset: 12px;
+}
+
+.recipe-hero-text > button {
+    align-self: baseline;
+    margin-top: 8px;
+    border: none;
+    background-color: #014421;
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 12px;
+    font-size: 16px;
+}
+
+.recipe-hero-image {
+    display: flex;
+    flex-direction: column;
 }
